@@ -2,13 +2,14 @@
 import Header from "./Components/header";
 import Footer from "./Components/footer";
 import Page1 from "./Components/page1";
+import Page2 from "./Components/page2";
 import { useState, useEffect } from "react";
 import { IconButton } from '@mui/material';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 export default function Home() {
   
-  const pages = [<Page1 />, <Page1 />, <Page1 />];
+  const pages = [<Page1 />, <Page2 />, <Page1 />];
   const [index, setIndex] = useState(0);
   
   useEffect(() => {
