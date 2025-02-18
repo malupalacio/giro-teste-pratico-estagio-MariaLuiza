@@ -3,13 +3,19 @@ import Header from "./Components/header";
 import Footer from "./Components/footer";
 import Page1 from "./Components/page1";
 import Page2 from "./Components/page2";
+import Page3 from "./Components/page3";
 import { useState, useEffect } from "react";
 import { IconButton } from '@mui/material';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 export default function Home() {
   
-  const pages = [<Page1 />, <Page2 />, <Page1 />];
+  {/* Array de paginas 
+    Page1: Pagina inicial
+    Page2: Pagina para Taxas
+    Page3: Pagina para Cotação
+  */}
+  const pages = [<Page1 />, <Page2 />, <Page3 />];
   const [index, setIndex] = useState(0);
   
   useEffect(() => {
