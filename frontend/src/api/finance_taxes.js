@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export async function getTaxasBrasil() {
-  const url = `https://api.hgbrasil.com/finance?format=json-cors&key=3ab5a5e4`;
+  const url = `https://api.hgbrasil.com/finance?format=json-cors&key=${process.env.NEXT_PUBLIC_API_KEY}`;
 
   try {
     const response = await axios.get(url);
