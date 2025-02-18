@@ -80,7 +80,7 @@ const TaxeTable = () => {
       <Box
         sx={{
           fontSize: "18px",
-          width: "22%",
+          width: "100%",
           marginTop: "4vh",
           marginBottom: "2vh",
           textAlign: "center",

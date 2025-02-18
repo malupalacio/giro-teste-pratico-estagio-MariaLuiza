@@ -26,8 +26,7 @@ export default function TaxasDoBrasil() {
           <Box
             sx={{
               marginRight: "auto",
-              marginTop: "-8vh",
-              marginLeft: "auto",
+              marginTop: {xl: "-2vh", lg: "6vh", md: "8vh", sm: "8vh", xs: "8vh"},
               marginLeft: "22vh",
             }}
           >

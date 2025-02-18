@@ -32,9 +32,9 @@ export default function TaxasDoBrasil() {
           {!isMobile && (
             <Box
               sx={{
-                marginRight: "auto",
                 marginTop: "-1vh",
-                marginRight: "140vh",
+                marginRight: {xl: "140vh", lg: "130vh", sm: "50vh"},
+                marginLeft: "auto",
               }}
             >
               <BreadCrumbs />
