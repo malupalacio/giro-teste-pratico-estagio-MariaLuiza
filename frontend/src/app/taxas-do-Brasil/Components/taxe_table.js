@@ -75,58 +75,34 @@ const TaxeTable = () => {
         marginTop: 4,
       }}
     >
+
       {/* Título da pagina*/}
       <Box
         sx={{
-          fontSize: "40px",
-          fontWeight: "bold",
+          fontSize: "18px",
+          width: "22%",
+          marginTop: "4vh",
+          marginBottom: "2vh",
+          textAlign: "center",
         }}
       >
-        Taxas do Brasil
-      </Box>
-
-      {/* Botão para atualizar as taxas */}
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "flex-end",
-          width: "95%",
-          maxWidth: {
-            xl: "1600px",
-            lg: "1200px",
-            md: "900px",
-            sm: "100%", 
-            xs: "100%", 
-          },
-          marginTop: "15vh",
-        }}
-      >
-        <Button 
-          sx={{
-            backgroundColor: "#1f337b",
-            color: "white",
-            fontSize: "12px",
-          }}
-          onClick={fetchTaxas} 
-        >
-          Atualizar
-        </Button>
+        Verifique as ultimas atualizações das taxas de CDI, SELIC e seus fatores diários.
       </Box>
 
       {/* Tabela com as taxas */}
       <TableContainer
         component={Paper}
         sx={{
-          width: "95%",
+          width: "150%",
           maxWidth: {
-            xl: "1600px",
-            lg: "1200px",
-            md: "900px",
-            sm: "100%", 
-            xs: "100%", 
+            xl: "75vh",
+            lg: "85vh",
+            md: "70vh",
+            sm: "70vh", 
+            xs: "40vh", 
           },
           overflowX: "auto",
-          marginTop: "1vh",
+          marginTop: "2vh",
         }}
       >
         <Table>
@@ -160,6 +136,34 @@ const TaxeTable = () => {
           </TableBody>
         </Table>
       </TableContainer>
+
+      {/* Botão para atualizar as taxas */}
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "flex-end",
+          width: "95%",
+          maxWidth: {
+            xl: "75vh",
+            lg: "85vh",
+            md: "70vh",
+            sm: "70vh", 
+            xs: "40vh",
+          },
+          marginTop: "1vh",
+        }}
+      >
+        <Button 
+          sx={{
+            backgroundColor: "#1f337b",
+            color: "white",
+            fontSize: "12px",
+          }}
+          onClick={fetchTaxas} 
+        >
+          Atualizar
+        </Button>
+      </Box>
     </Box>
   );
 };

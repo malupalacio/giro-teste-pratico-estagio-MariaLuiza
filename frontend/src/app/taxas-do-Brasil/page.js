@@ -28,12 +28,23 @@ export default function TaxasDoBrasil() {
               marginRight: "auto",
               marginTop: "-8vh",
               marginLeft: "auto",
-              marginLeft: "5vh",
+              marginLeft: "22vh",
             }}
           >
             <BreadCrumbs />
           </Box>
         )}
+        
+        {/* Título da pagina*/}
+        <Box
+          sx={{
+            fontSize: {xs:"30px", lg:"40px"},
+            fontWeight: "bold",
+            marginTop: "7vh",
+          }}
+        >
+          Taxas do Brasil
+        </Box>
         <TaxeTable />
       </Box>
       <Footer />
