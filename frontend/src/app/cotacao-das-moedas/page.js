@@ -26,26 +26,29 @@ export default function TaxasDoBrasil() {
           overflowX: "hidden", // Evita arrasto lateral
         }}
       >
+
         {/* Breadcrumbs apenas aparece se não for mobile */}
-        {!isMobile && (
-          <Box
-            sx={{
-              marginRight: "auto",
-              marginTop: "-8vh",
-              marginLeft: "auto",
-              marginLeft: "5vh",
-            }}
-          >
-            <BreadCrumbs />
-          </Box>
-        )}
+        <Box>
+          {!isMobile && (
+            <Box
+              sx={{
+                marginRight: "auto",
+                marginTop: "-1vh",
+                marginRight: "140vh",
+              }}
+            >
+              <BreadCrumbs />
+            </Box>
+          )}
+        </Box>
 
         {/* Título da pagina*/}
         <Box
           sx={{
             fontSize: {xs:"30px", lg:"40px"},
             fontWeight: "bold",
-            marginTop: "7vh",
+            marginTop: "4vh",
+            marginBottom: "0vh",
           }}
         >
           Cotações das Moedas
